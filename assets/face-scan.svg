@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="Courier New, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f24"/><stop offset="1" stop-color="#150a2e"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00f7ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00f7ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00f7ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#00f7ff" stroke-opacity="0.07"/>
+    </pattern>
+    <g id="mesh" fill="none">
+      <ellipse rx="80" ry="105"/>
+      <path d="M-60,-70 Q0,-60 60,-70"/><path d="M-74,-40 Q0,-30 74,-40"/>
+      <path d="M-80,-10 Q0,0 80,-10"/><path d="M-79,20 Q0,30 79,20"/>
+      <path d="M-70,50 Q0,60 70,50"/><path d="M-52,80 Q0,90 52,80"/>
+      <ellipse rx="55" ry="105"/><ellipse rx="28" ry="105"/>
+      <line x1="0" y1="-105" x2="0" y2="105"/>
+      <ellipse cx="-30" cy="-15" rx="12" ry="5"/><ellipse cx="30" cy="-15" rx="12" ry="5"/>
+      <path d="M-44,-32 Q-30,-40 -16,-32"/><path d="M16,-32 Q30,-40 44,-32"/>
+      <path d="M0,-10 L-9,32 Q0,38 9,32 Z"/>
+      <path d="M-22,58 Q0,70 22,58"/>
+      <path d="M-30,98 L-34,125"/><path d="M30,98 L34,125"/>
+      <path d="M-34,125 Q-90,135 -120,165"/><path d="M34,125 Q90,135 120,165"/>
+    </g>
+    <clipPath id="reveal">
+      <rect x="0" y="85" width="460" height="0">
+        <animate attributeName="height" values="0;285;285;0" keyTimes="0;0.55;0.95;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="420" rx="14" fill="url(#bg)"/>
+  <rect width="800" height="420" rx="14" fill="url(#grid)"/>
+  <rect x="1" y="1" width="798" height="418" rx="14" fill="none" stroke="#00f7ff" stroke-opacity="0.35"/>
+
+  <!-- dim mesh -->
+  <use href="#mesh" transform="translate(230,190)" stroke="#00f7ff" stroke-opacity="0.18" stroke-width="1"/>
+  <!-- bright mesh revealed by scan -->
+  <g clip-path="url(#reveal)">
+    <use href="#mesh" transform="translate(230,190)" stroke="#00f7ff" stroke-width="1.4"/>
+    <g fill="#ff2fd6">
+      <circle cx="200" cy="175" r="3"><animate attributeName="r" values="2;4.5;2" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="260" cy="175" r="3"><animate attributeName="r" values="2;4.5;2" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="230" cy="222" r="3"><animate attributeName="r" values="2;4.5;2" dur="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="208" cy="248" r="3"/><circle cx="252" cy="248" r="3"/>
+      <circle cx="230" cy="295" r="3"/><circle cx="150" cy="190" r="3"/><circle cx="310" cy="190" r="3"/>
+    </g>
+  </g>
+
+  <!-- scan beam -->
+  <g>
+    <rect x="95" y="80" width="270" height="14" fill="url(#beam)">
+      <animate attributeName="y" values="78;363;363;78" keyTimes="0;0.55;0.95;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.55;0.6;1" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- corner brackets -->
+  <g stroke="#00f7ff" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M90,70 V50 H110"/><path d="M370,70 V50 H350"/>
+    <path d="M90,370 V390 H110"/><path d="M370,370 V390 H350"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- HUD panel -->
+  <g fill="#00f7ff">
+    <text x="440" y="70" font-size="13" fill-opacity="0.6">// BIOMETRIC SCAN MODULE v2.0</text>
+    <text x="440" y="108" font-size="26" font-weight="bold">UDIT KUMAR</text>
+    <text x="440" y="134" font-size="15" fill="#ff2fd6">@Udit-8325</text>
+    <line x1="440" y1="150" x2="760" y2="150" stroke="#00f7ff" stroke-opacity="0.35"/>
+
+    <text x="440" y="185" font-size="14" opacity="0">&gt; INITIALIZING SENSORS...
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.03;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+    <text x="440" y="210" font-size="14" opacity="0">&gt; MAPPING FACIAL LANDMARKS...
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.15;0.2;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+    <text x="440" y="235" font-size="14" opacity="0">&gt; ANALYZING SKILL MATRIX...
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.35;0.4;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+    <text x="440" y="260" font-size="14" fill="#39ff14" opacity="0">&gt; IDENTITY VERIFIED  [OK]
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.6;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+
+    <rect x="440" y="290" width="300" height="12" rx="6" fill="none" stroke="#00f7ff" stroke-opacity="0.5"/>
+    <rect x="442" y="292" width="0" height="8" rx="4">
+      <animate attributeName="width" values="0;296;296;0" keyTimes="0;0.55;0.95;1" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="440" y="326" font-size="13" fill-opacity="0.7">SCAN PROGRESS</text>
+
+    <text x="440" y="372" font-size="22" font-weight="bold" fill="#39ff14" opacity="0">ACCESS GRANTED
+      <animate attributeName="opacity" values="0;0;1;0.5;1;1;0" keyTimes="0;0.58;0.6;0.7;0.8;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+  </g>
+</svg>
