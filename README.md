@@ -9,7 +9,7 @@
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=240&section=header&text=UDIT%20KUMAR&fontSize=64&fontColor=00f7ff&fontAlignY=38&animation=fadeIn&desc=Building%20the%20future%2C%20one%20commit%20at%20a%20time&descSize=18&descAlignY=62&descColor=ff2fd6" width="100%" alt="header"/>
 
 <a href="https://github.com/Udit-8325">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=720&height=60&lines=Hi+%F0%9F%91%8B%2C+I'm+Udit+Kumar;Full-Stack+Developer+%F0%9F%92%BB;Open-Source+Enthusiast+%F0%9F%9A%80;Problem+Solver+%7C+Fast+Learner+%E2%9A%A1;Let's+build+something+legendary+%F0%9F%94%A5" alt="Typing animation"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=720&height=60&lines=Hi+%F0%9F%91%8B%2C+I'm+Udit+Kumar;Python-programmer+%F0%9F%92%BB;Open-Source+Enthusiast+%F0%9F%9A%80;Problem+Solver+%7C+Fast+Learner+%E2%9A%A1;Trying-To-build+%F0%9F%94%A5" alt="Typing animation"/>
 </a>
 
 <br/>
@@ -32,10 +32,10 @@
 const udit = {
   name:      "Udit Kumar",
   github:    "Udit-8325",
-  role:      "Full-Stack Developer",          // EDIT
+  role:      "Backend Dev",          // EDIT
   location:  "India 🇮🇳",                      // EDIT
   currently: "Building cool projects & learning new tech",
-  learning:  ["System Design", "Cloud", "AI/ML"],   // EDIT
+  learning:  ["Exploring a new language"],   // EDIT
   funFact:   "I turn coffee into code ☕ → 💻",
 };
 ```
@@ -43,7 +43,7 @@ const udit = {
 - 🔭 Currently working on **awesome projects** — check my pinned repos
 - 🌱 Always learning, always shipping
 - 🤝 Open to **collaborations**, internships & open-source contributions
-- ⚡ Ask me about **web development, APIs, and clean code**
+- ⚡ Ask me about **web hosting, APIs, and clean code**
 
 ---
 
@@ -51,9 +51,9 @@ const udit = {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,python,fastapi,mongodb,postgres,mysql&perline=13" alt="stack"/>
+<img src="https://skillicons.dev/icons?i=html,css,ts,react,nextjs,express,python,fastapi,postgres,mysql&perline=13" alt="stack"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,figma,postman,vercel,aws,firebase&perline=10" alt="tools"/>
+<img src="https://skillicons.dev/icons?i=git,github,docker,vscode,figma,vercel,firebase&perline=10" alt="tools"/>
 
 </div>
 
@@ -107,9 +107,8 @@ const udit = {
 <div align="center">
 
 <a href="https://github.com/Udit-8325"><img src="https://img.shields.io/badge/GitHub-Udit--8325-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://instagram.com/your-instagram"><img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="mailto:udittiwary8325@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+
 
 <br/><br/>
 
